@@ -1,0 +1,15 @@
+<h1>Lista de Empleados - Proyecto Benjamín</h1>
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Cargo</th>
+        <th>Sueldo</th>
+    </tr>
+    {% for e in empleados %}
+    <tr>
+        <td>{{ e.nombre }}</td>
+        <td>{{ e.cargo }}</td>
+        <td>${{ e.sueldo }}</td>
+    </tr>
+    {% endfor %}
+</table>
